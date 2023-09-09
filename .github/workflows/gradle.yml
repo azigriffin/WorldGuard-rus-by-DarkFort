@@ -9,16 +9,18 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "EngineHub-version/7.0.x" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "EngineHub-version/7.0.x" ]
 
 permissions:
   contents: read
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 17
